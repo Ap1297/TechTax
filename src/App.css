@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FDF5E6; /* Light cream */
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-top {
+  background-color: #E6D8B4; /* Light cream */
+  color: #5C4033; /* Brown */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #FFFFFF; /* White */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 100px;
+  margin-right: 10px;
+}
+
+.navbar-logo span {
+  font-size: 14px;
+  color: #5C4033; /* Brown */
+  font-weight: bold;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: #5C4033; /* Brown */
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #8B4513; /* SaddleBrown */
+}
+
+.navbar-actions .btn-get-in-touch {
+  background-color: #D2691E; /* Chocolate */
+  color: #FDF5E6; /* Light cream */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-actions .btn-get-in-touch:hover {
+  background-color: #A0522D; /* Sienna */
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px; /* Adjust size as per your design */
+  margin-right: 10px;
+}
+
+.company-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.company-name h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5C4033; /* Brown */
+}
+
+.company-name span {
+  font-size: 12px;
+  color: #8B4513; /* SaddleBrown */
+}
