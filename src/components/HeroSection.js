@@ -8,14 +8,15 @@ function HeroSection() {
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-text">
-            <h1>Experience Expert Guidance for Taxation Services & IT Software Services</h1>
-            <p>Empowering your success through personalized advice creating wealth strategies tailored for you and your business.</p>
-            <a href="http://TaxTech/contact-us/" className="hero-button">
-              Contact Us →
+            <h1>Expert Taxation & IT Software Services</h1>
+            <p>
+              Empowering your success through personalized strategies tailored to fit your business and financial goals.
+            </p>
+            <a href="#contact" className="hero-button">
+              Get in Touch →
             </a>
           </div>
         </div>
-        
       </div>
     </section>
   );
