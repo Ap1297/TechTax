@@ -1,0 +1,172 @@
+.navbar {
+  width: 100%;
+}
+
+.navbar-top {
+  background-color: #E6D8B4; /* Light cream */
+  color: #5C4033; /* Brown */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #FFFFFF; /* White */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.company-name h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5C4033; /* Brown */
+}
+
+.company-name span {
+  font-size: 12px;
+  color: #8B4513; /* SaddleBrown */
+}
+
+.navbar-links {
+  display: flex; /* Default behavior: show links in a row on desktop */
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  margin: 0 15px;
+  color: #5C4033; /* Brown */
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #8B4513; /* SaddleBrown */
+}
+
+.navbar-actions .btn-get-in-touch {
+  background-color: #D2691E; /* Chocolate */
+  color: #FDF5E6; /* Light cream */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-actions .btn-get-in-touch:hover {
+  background-color: #A0522D; /* Sienna */
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;  /* Hide the links by default on mobile */
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-links.active {
+    display: flex;  /* Show links when active on mobile */
+  }
+
+  .navbar-actions {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+/* Gradient Backgrounds */
+.navbar-top {
+  background: linear-gradient(135deg, #E6D8B4 0%, #D2B48C 100%); /* Gradient for top bar */
+  color: #5C4033;
+}
+
+.navbar-main {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FAF3E0 100%); /* Subtle gradient for main navbar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Menu Styles */
+.navbar-links {
+  background: #FAF3E0;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.navbar-links a {
+  padding: 10px;
+  display: block;
+  color: #5C4033;
+
+}
+
+.navbar-links a:last-child {
+  border-bottom: none;
+}
+
+.navbar-links a:hover {
+  background-color: #E6D8B4;
+  color: #A0522D;
+}
+
+@media (max-width: 768px) {
+  .navbar-top {
+    background: linear-gradient(135deg, #E6D8B4 0%, #D2B48C 100%);
+  }
+
+  .navbar-main {
+    background: linear-gradient(135deg, #FFFFFF 0%, #FAF3E0 100%);
+  }
+
+  .navbar-links {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .navbar-links a {
+    padding: 15px;
+  }
+
+  .navbar-links a:hover {
+    background-color: #E6D8B4;
+  }
+}

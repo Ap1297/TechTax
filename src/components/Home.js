@@ -1,7 +1,14 @@
 import React from "react";
+import HeroSection from "./HeroSection"; // Import HeroSection
 
 const Home = () => {
-  return <div className="page-container"><h2>Home Page</h2><p>Welcome to TechTax!</p></div>;
+  return (
+    <div>
+      <HeroSection /> 
+      <h1>Welcome to TechTax</h1>
+      <p>This is the Home page content.</p>
+    </div>
+  );
 };
 
 export default Home;

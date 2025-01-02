@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo.png";
-import "../Navbar.css";
+import "../stylesheet/Header.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -30,13 +30,14 @@ const Navbar = () => {
           ☰
         </button>
 
-        <nav className={`navbar-links ${menuOpen ? 'active' : ''}`}>
+        <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
           <Link to="/">HOME</Link>
           <Link to="/about">ABOUT US</Link>
           <Link to="/services">SERVICES</Link>
           <Link to="/contact">CONTACT US</Link>
           <Link to="/blogs">BLOGS</Link>
         </nav>
+
         <div className="navbar-actions">
           <button className="btn-get-in-touch">GET IN TOUCH →</button>
         </div>
