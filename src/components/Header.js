@@ -24,11 +24,12 @@ const Navbar = () => {
             <h1>TechTax</h1>
             <span>Accounting & Technology</span>
           </div>
-        </div>
-
-        <button className="navbar-toggle" onClick={toggleMenu}>
+          <button className="navbar-toggle" onClick={toggleMenu}>
           ☰
         </button>
+        </div>
+
+        
 
         <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
           <Link to="/">HOME</Link>

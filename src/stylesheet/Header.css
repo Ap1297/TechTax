@@ -93,6 +93,8 @@
 
   .navbar-toggle {
     display: block;
+    align-items: right;
+    padding-left: 100px;
   }
 
   .navbar-links {
@@ -110,6 +112,7 @@
     width: 100%;
     margin-top: 10px;
     text-align: center;
+    display: none;
   }
 }
 
@@ -148,25 +151,3 @@
   color: #A0522D;
 }
 
-@media (max-width: 768px) {
-  .navbar-top {
-    background: linear-gradient(135deg, #E6D8B4 0%, #D2B48C 100%);
-  }
-
-  .navbar-main {
-    background: linear-gradient(135deg, #FFFFFF 0%, #FAF3E0 100%);
-  }
-
-  .navbar-links {
-    width: 100%;
-    border-radius: 0;
-  }
-
-  .navbar-links a {
-    padding: 15px;
-  }
-
-  .navbar-links a:hover {
-    background-color: #E6D8B4;
-  }
-}

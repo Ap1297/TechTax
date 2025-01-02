@@ -5,8 +5,7 @@ const Home = () => {
   return (
     <div>
       <HeroSection /> 
-      <h1>Welcome to TechTax</h1>
-      <p>This is the Home page content.</p>
+      
     </div>
   );
 };
