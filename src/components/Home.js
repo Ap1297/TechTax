@@ -1,11 +1,12 @@
 import React from "react";
-import HeroSection from "./HeroSection"; // Import HeroSection
+import HeroSection from "./HeroSection"; 
+import ServiceSection from "./ServiceSection";
 
 const Home = () => {
   return (
     <div>
       <HeroSection /> 
-      
+      <ServiceSection />
     </div>
   );
 };

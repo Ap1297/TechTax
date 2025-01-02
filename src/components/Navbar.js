@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo.png";
-import "../stylesheet/Header.css";
+import "../Navbar.css";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Services from "./components/Services";
+import Blogs from "./components/Blogs";
+import Home from "./components/Home";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  };
-
-  const closeMenu = () => {
-    setMenuOpen(false);
   };
 
   return (
@@ -28,20 +29,27 @@ const Navbar = () => {
             <h1>TechTax</h1>
             <span>Accounting & Technology</span>
           </div>
-          <button className="navbar-toggle" onClick={toggleMenu}>
-          ☰
-        </button>
         </div>
 
-        
+        <button className="navbar-toggle" onClick={toggleMenu}>
+          ☰
+        </button>
 
-        <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
-          <Link to="/" onClick={closeMenu}>HOME</Link>
-          <Link to="/about" onClick={closeMenu}>ABOUT US</Link>
-          <Link to="/services" onClick={closeMenu}>SERVICES</Link>
-          <Link to="/contact" onClick={closeMenu}>CONTACT US</Link>
-          <Link to="/blogs" onClick={closeMenu}>BLOGS</Link>
-        </nav>
+        <nav className={navbar-links ${menuOpen ? "active" : ""}}>
+            <a href="/">HOME</a>
+            <a href="/about">ABOUT US</a>
+            <a href="/services">SERVICES</a>
+            <a href="/contact">CONTACT US</a>
+            <a href="/blogs">BLOGS</a>
+          </nav>
+
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blogs" element={<Blogs />} />
+      </Routes>
 
         <div className="navbar-actions">
           <button className="btn-get-in-touch">GET IN TOUCH →</button>
