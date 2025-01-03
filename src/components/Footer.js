@@ -57,7 +57,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>Copyright &copy; 2024. All Rights Reserved by TechTax.</p>
+        <p>Copyright &copy; 2025. All Rights Reserved by TechTax.</p>
       </div>
     </footer>
   );
