@@ -12,7 +12,7 @@ function HeroSection() {
             <p>
               Empowering your success through personalized strategies tailored to fit your business and financial goals.
             </p>
-            <a href="#contact" className="hero-button">
+            <a href="/contact" className="hero-button">
               Contact Us →
             </a>
           </div>

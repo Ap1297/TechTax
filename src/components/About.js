@@ -1,7 +1,13 @@
 import React from "react";
+import ServiceSection from "./ServiceSection";
+import FooterSection from "./Footer";
 
 const About = () => {
-  return <div className="page-container"><h2>About Us</h2><p>Learn more about TechTax.</p></div>;
+  return (
+    <div>
+      <FooterSection/>
+    </div>
+  );
 };
 
 export default About;
