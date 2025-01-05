@@ -1,7 +1,12 @@
 import React from "react";
+import FooterSection from "./Footer";
 
 const Blogs = () => {
-  return <div className="page-container"><h2>Blogs</h2><p>Read our latest blogs.</p></div>;
+  return (
+    <div>
+      <FooterSection/>
+    </div>
+  );
 };
 
 export default Blogs;

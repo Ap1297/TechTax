@@ -1,7 +1,12 @@
 import React from "react";
+import FooterSection from "./Footer";
 
 const Contact = () => {
-  return <div className="page-container"><h2>Contact Us</h2><p>Get in touch with TechTax.</p></div>;
+  return (
+    <div>
+      <FooterSection/>
+    </div>
+  );
 };
 
 export default Contact;
