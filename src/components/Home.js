@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import ServiceSection from "./ServiceSection";
 import FooterSection from "./Footer";
 import WhyChooseUs from "./WhyChooseUs";
+import ContactUs from "./Contact";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <HeroSection /> 
       <ServiceSection />
       <WhyChooseUs/>
+      <ContactUs/>
       <FooterSection/>
     </div>
   );
