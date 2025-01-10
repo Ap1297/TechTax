@@ -64,3 +64,30 @@ textarea {
 .submit-btn:hover {
   background-color: #d9431b;
 }
+
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .contact-form {
+    flex-direction: column; /* Stack form and image vertically */
+    align-items: flex-start; /* Align items to start */
+  }
+
+  .form-image img {
+    margin: 0 auto; /* Center image */
+  }
+
+  .form-container h2 {
+    font-size: 20px; /* Adjust font size */
+    margin-bottom: 10px;
+  }
+
+  .form-row {
+    gap: 10px; /* Reduce gap between fields */
+  }
+
+  .submit-btn {
+    padding: 15px;
+    font-size: 16px; /* Larger button text for better usability */
+  }
+}
