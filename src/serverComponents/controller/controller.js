@@ -20,7 +20,7 @@ module.exports.addContactDetails = async (req, res, next) => {
     await contact.save();
 
     // Set up nodemailer transport
-    const smtpTransport = nodemailer.createTransport({
+    /*const smtpTransport = nodemailer.createTransport({
       host: "smtpout.secureserver.net",
       secure: true,
       secureConnection: false, // TLS requires secureConnection to be false
@@ -33,6 +33,14 @@ module.exports.addContactDetails = async (req, res, next) => {
       auth: {
         user: "an.panchal97@gmail.com",
         pass: "Ganesh@1228",
+      },
+    });*/ //Godaddy email account
+
+    const smtpTransport = nodemailer.createTransport({
+      service: "Gmail", // Use Gmail's SMTP server
+      auth: {
+        user: "an.panchal97@gmail.com", // Your Gmail address
+        pass: "hzya khkb rrej igfq", // Use an App Password
       },
     });
 
