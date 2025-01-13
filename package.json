@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "start-server": "node src/serverComponents/server.js",
     "start-app": "npm run build && npm start && npm run start-server",
-    "node": "node src/serverComponents/server.js",
+    "node": "node src/serverComponents/server.js"
   },
   "browserslist": {
     "production": [
