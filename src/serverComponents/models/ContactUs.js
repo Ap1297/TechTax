@@ -10,9 +10,9 @@ const contactSchema =new mongoose.Schema({
        type: String,
        required: 'Email can\'t be empty'
    },
-   subject: {
+   service: {
        type: String,
-       required: 'Subject can\'t be empty',
+       required: 'Service can\'t be empty',
    },
    mobileNo: {
        type:String

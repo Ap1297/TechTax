@@ -11,9 +11,9 @@ module.exports.addContactDetails = async (req, res, next) => {
     const contact = new Contact({
       fullName: req.body.fullName,
       email: req.body.email,
-      subject: req.body.subject,
       mobileNo: req.body.mobileNo,
       message: req.body.message,
+      service: req.body.service,
     });
 
     // Save the contact to the database
@@ -48,14 +48,14 @@ module.exports.addContactDetails = async (req, res, next) => {
     const mailOptions = {
       to: 'am.panchal97@gmail.com',
       from: contact.email,
-      subject: contact.subject,
+      subject: "Enquire details from customer.",
       html: `
         <h1>Contact Details</h1>
         <p>User FullName: ${contact.fullName}</p>
         <p>User Email: ${contact.email}</p>
-        <p>User Subject: ${contact.subject}</p>
         <p>User Mobile No.: ${contact.mobileNo}</p>
         <p>User Message: ${contact.message}</p>
+        <p>Service: ${contact.service}</p>
       `,
     };
 
@@ -65,7 +65,7 @@ module.exports.addContactDetails = async (req, res, next) => {
     // Send response
     res
       .status(200)
-      .send(['An e-mail has been sent to ' + contact.email + ' with further instructions.']);
+      .send(['An e-mail has been sent with further instructions.']);
   } catch (err) {
     next(err); // Pass errors to the Express error handler
   }

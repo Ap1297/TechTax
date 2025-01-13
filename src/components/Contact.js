@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../stylesheet/Contact.css';
 import contactUs from '../assets/contactUs.jpg';
+import Swal from "sweetalert2";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -11,13 +12,47 @@ function Contact() {
     message: ''
   });
 
+  const [status, setStatus] = useState("Submit");
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("Sending...");
+    const {name, email, phone, message, service} = e.target.elements;
+    let details = {
+      fullName : name.value,
+      email : email.value,
+      mobileNo : phone.value,
+      message : message.value,
+      service : service.value,
+    };
+    let response = await fetch("http://localhost:5000/api/contactDetails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    if (result!= "") {
+      Swal.fire({
+        title: "Success!",
+        text: result,
+        icon: "success"
+      });
+      // Reset form values
+  setFormData({ name: "", email: "", phone: "", message: "" });
+    } else {
+      Swal.fire({
+        title: "Error!",
+        text: "There was an error sending your message. Please try again later.",
+        icon: "error",
+      });
+    }
     console.log('Form Data:', formData);
   };
 
