@@ -29,7 +29,7 @@ function Contact() {
       message : message.value,
       service : service.value,
     };
-    let response = await fetch("http://localhost:5000/api/contactDetails", {
+    let response = await fetch("https://techtax.onrender.com/api/contactDetails", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
