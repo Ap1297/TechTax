@@ -5,8 +5,9 @@ const mongoose = require("mongoose");
 const bodyParser = require('body-parser');
 const rtsIndex = require('../serverComponents/routes/index.router');
 const cors = require("cors");
+require('dotenv').config();
 
-mongoose.connect("mongodb+srv://dbUser:dbUser@cluster0.3flln.mongodb.net/TechTax?retryWrites=true&w=majority&appName=Cluster0", {
+mongoose.connect(process.env.MONGO_URL , {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });

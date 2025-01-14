@@ -3,8 +3,9 @@ require('../models/ContactUs.js');
 const Contact = mongoose.model('ContactUs');
 
 const _= require('lodash');
-var async = require("async");
 var nodemailer = require("nodemailer");
+require('dotenv').config();
+
 module.exports.addContactDetails = async (req, res, next) => {
   try {
     // Create a new contact
@@ -39,8 +40,8 @@ module.exports.addContactDetails = async (req, res, next) => {
     const smtpTransport = nodemailer.createTransport({
       service: "Gmail", // Use Gmail's SMTP server
       auth: {
-        user: "an.panchal97@gmail.com", // Your Gmail address
-        pass: "hzya khkb rrej igfq", // Use an App Password
+        user: process.env.EMAIL_USER, 
+        pass: process.env.EMAIL_PASS, 
       },
     });
 
