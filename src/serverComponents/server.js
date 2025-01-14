@@ -8,6 +8,12 @@ mongoose.connect("mongodb+srv://dbUser:dbUser@cluster0.3flln.mongodb.net/TechTax
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
+app.use(cors({
+    origin: "https://techtax.onrender.com",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"],
+}));
+
 app.use(bodyParser.json());
 app.use('/api',rtsIndex);
 
