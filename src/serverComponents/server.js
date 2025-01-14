@@ -11,10 +11,12 @@ mongoose.connect("mongodb+srv://dbUser:dbUser@cluster0.3flln.mongodb.net/TechTax
     useUnifiedTopology: true,
 });
 app.use(cors({
-    origin: "https://techtax.onrender.com",
+    origin: ["http://localhost:3000", "https://eloquent-kheer-619334.netlify.app"],
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
 }));
+
+app.options('*', cors());
 
 app.use(bodyParser.json());
 app.use('/api',rtsIndex);
