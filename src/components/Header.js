@@ -44,8 +44,9 @@ const Navbar = () => {
         </nav>
 
         <div className="navbar-actions">
-          <button className="btn-get-in-touch">GET IN TOUCH →</button>
+            <a href="/contact" className="btn-get-in-touch">GET IN TOUCH →</a>
         </div>
+
       </div>
     </header>
   );
