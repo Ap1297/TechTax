@@ -145,6 +145,19 @@ function Contact() {
       ></iframe>
     </div>
     </div>
+    <div className="contact-details">
+    <div className="office-info">
+      <h3>Dubai Office</h3>
+      <p>Office No. M-45 Aswar Building Business Bay, PO Box: 91929, Dubai</p>
+      <p><strong>Office:</strong> (04) 3364658</p>
+    </div>
+    <div className="office-info">
+      <h3>India Office</h3>
+      <p>RK Supreme Office No. 1305, Opp. Twin Star Towers, Near Nana Mova Circle, 150 Ft. Ring Road, Rajkot, Gujarat, India.</p>
+      <p><strong>Phone:</strong> +971 50 119 8465</p>
+      <p><strong>For Inquiry:</strong> info@dkk.ae</p>
+    </div>
+  </div>
     <div><FooterSection/></div>
   </div>
   );
