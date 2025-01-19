@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../stylesheet/Contact.css';
 import contactUs from '../assets/contactUs.jpg';
 import Swal from "sweetalert2";
+import FooterSection from "./Footer";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -57,7 +58,23 @@ function Contact() {
   };
 
   return (
-    <div className="contact-form">
+    <div>
+
+<section className="contact-hero-section">
+      <div className="contact-hero-overlay"></div>
+      <div className="contact-hero-container">
+        <div className="contact-hero-content">
+          <div className="contact-hero-text">
+            <h1>Contact Us</h1>
+            <p>
+            Provide exceptional corporate services while maintaining the highest levels of integrity and professionalism.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div className="contact-form">
       <div className="form-image">
         <img src={contactUs} alt="Businessman" />
       </div>
@@ -127,8 +144,9 @@ function Contact() {
         loading="lazy"
       ></iframe>
     </div>
-
     </div>
+    <div><FooterSection/></div>
+  </div>
   );
 }
   export default Contact;
