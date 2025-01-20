@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../stylesheet/Contact.css';
 import contactUs from '../assets/contactUs.jpg';
 import Swal from "sweetalert2";
+import FooterSection from "./Footer";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -57,7 +58,23 @@ function Contact() {
   };
 
   return (
-    <div className="contact-form">
+    <div>
+
+<section className="contact-hero-section">
+      <div className="contact-hero-overlay"></div>
+      <div className="contact-hero-container">
+        <div className="contact-hero-content">
+          <div className="contact-hero-text">
+            <h1>Contact Us</h1>
+            <p>
+            Provide exceptional corporate services while maintaining the highest levels of integrity and professionalism.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div className="contact-form">
       <div className="form-image">
         <img src={contactUs} alt="Businessman" />
       </div>
@@ -127,8 +144,22 @@ function Contact() {
         loading="lazy"
       ></iframe>
     </div>
-
     </div>
+    <div className="contact-details">
+    <div className="office-info">
+      <h3>Dubai Office</h3>
+      <p>Office No. M-45 Aswar Building Business Bay, PO Box: 91929, Dubai</p>
+      <p><strong>Office:</strong> (04) 3364658</p>
+    </div>
+    <div className="office-info">
+      <h3>India Office</h3>
+      <p>RK Supreme Office No. 1305, Opp. Twin Star Towers, Near Nana Mova Circle, 150 Ft. Ring Road, Rajkot, Gujarat, India.</p>
+      <p><strong>Phone:</strong> +971 50 119 8465</p>
+      <p><strong>For Inquiry:</strong> info@dkk.ae</p>
+    </div>
+  </div>
+    <div><FooterSection/></div>
+  </div>
   );
 }
   export default Contact;
