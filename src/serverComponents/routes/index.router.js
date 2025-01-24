@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const ctrlUser = require('../controller/controller.js');
 const corsOptions = {
-    origin: ["http://localhost:3003", "https://techtax.netlify.app"], // Allow localhost and Netlify
+    origin: ["http://localhost:3000", "https://techtax.netlify.app"], // Allow localhost and Netlify
     methods: ["GET", "POST"],      // Allow these HTTP methods
     allowedHeaders: ["Content-Type"], // Allow specific headers
 };
