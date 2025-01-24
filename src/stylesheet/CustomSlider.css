@@ -1,0 +1,111 @@
+/* Container */
+.business-services-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Reduced padding */
+    background-color: #f8fafc;
+    gap: 20px;
+  }
+  
+  /* Left content styles */
+  .left-content {
+    flex: 1;
+    padding-right: 15px; /* Reduced padding */
+  }
+  
+  .main-heading {
+    font-size: 1.5rem; /* Reduced font size */
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 0.9rem; /* Reduced font size */
+    margin-bottom: 15px;
+  }
+  
+  .cta-button {
+    font-size: 0.9rem; /* Reduced button size */
+    padding: 8px 15px; /* Reduced padding */
+  }
+  
+  /* Slider styles */
+  .slider-container {
+    flex: 1.2; /* Adjusted proportion */
+    max-width: 50%; /* Reduced slider width */
+  }
+  
+  .slide {
+    position: relative;
+    border-radius: 8px;
+  }
+  
+  .slide-img {
+    width: 80%;
+    height: 180px; /* Reduced height */
+    object-fit: cover; /* Maintain image aspect ratio */
+    border-radius: 8px;
+  }
+  
+  .overlay {
+    font-size: 0.8rem; /* Reduced overlay text size */
+    padding: 5px 10px; /* Reduced padding */
+  }
+  
+  /* Slick arrows */
+  .slick-arrow {
+    width: 25px; /* Smaller arrow size */
+    height: 25px;
+  }
+  
+  .slick-prev {
+    left: -30px;
+  }
+  
+  .slick-next {
+    right: -30px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .business-services-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .left-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .slider-container {
+      max-width: 100%;
+    }
+  
+    .slide-img {
+      height: 120px; /* Further reduced height for smaller screens */
+    }
+
+    .slider-button {
+        font-size: 14px; /* Adjust button size */
+        padding: 8px 16px; /* Adjust padding */
+      }
+  }
+  
+
+  .slider-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f50; /* Button color */
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .slider-button:hover {
+    background-color: #ff6347; /* Hover color */
+  }
+  
