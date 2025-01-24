@@ -121,7 +121,7 @@ textarea {
 .contact-hero-section {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 30vh;
   display: flex;
   align-items: center; /* Vertically center content */
   justify-content: flex-start; /* Align content to the left */
