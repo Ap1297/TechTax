@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Slider from "react-slick"; // Import react-slick for carousel
+import Slider from "./Slider";
 import FooterSection from "./Footer";
 import "../stylesheet/About.css";
 import accountServiceImg from "../assets/accountService.jpg";
@@ -147,7 +147,7 @@ const About = () => {
           </div>
         </div>
       </section>
-
+    <Slider/>
       {/* Contact Form */}
       <div className="contact-form">
         <div className="form-image">
