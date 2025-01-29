@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../stylesheet/Slider.css"; // Ensure the CSS file path is correct
-import financialImage from "../assets/businessAdvisory.jpg";
+import financialImage from "../assets/slider2.jpg";
 import itService from "../assets/slider 1.jpg";
-import advisory from "../assets/businessSetup.jpg";
+import advisory from "../assets/slider3.jpg";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

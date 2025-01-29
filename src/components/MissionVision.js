@@ -28,11 +28,13 @@ const MissionVision = () => {
               Enterprise Data Management. His expertise in Java, Spring Boot, 
               Microservices, and the MEAN stack has enabled him to drive impactful 
               outcomes under tight deadlines. 
-
+              </p>
+              <p className="founder-education">
               Ankit also holds a Bachelors Of Engineering into Information Technology from Mumbai University.
               Since moving to the UAE in 2024, he has played key leadership roles in renowned companies, leveraging his 
               technical and financial acumen to reshape the industry landscape.
-            </p>
+              </p>
+            
           </div>
         </div>
 
@@ -50,6 +52,10 @@ const MissionVision = () => {
             Darshan Mansuriya is the Co-Founder of TechTax Accounting & Advisory. With extensive expertise in finance and business strategy, he has played a crucial role in shaping the company’s direction. 
               He has over 6+ years of experience in financial management, business consulting, and digital transformation, helping clients navigate complex financial landscapes with ease.
             
+            </p>
+            <p className="founder-education">
+              He is a Chartered Accountant from The Institute of Chartered Accountants of India and holds a Master's in Commerce from the University of Mumbai. 
+              His academic foundation in business and finance strengthens his expertise in taxation and financial management.
             </p>
           </div>
         </div>

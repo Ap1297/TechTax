@@ -1,10 +1,11 @@
 /* CSS for Mission & Vision Section */
 .mission-vision-section {
   font-family: "Arial", sans-serif;
-  padding: 50px 20px;  /* Increased padding for better spacing */
+  padding: 60px 20px; /* Increased padding for better spacing */
   color: #333;
-  line-height: 1.8;  /* Improved line height for readability */
+  line-height: 1.8; /* Improved line height for readability */
   background-color: #f9fafb;
+  text-align: center; /* Centering the section */
 }
 
 /* Founder Section */
@@ -12,16 +13,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;  /* More space between founders */
+  gap: 60px; /* Increased space between founders */
+  padding: 20px;
 }
 
 .founder-section {
   display: flex;
-  gap: 30px;  /* Increased spacing */
-  margin-bottom: 50px;
+  gap: 40px; /* Increased spacing */
+  margin-bottom: 60px;
   align-items: center;
   flex: 1;
-  max-width: 600px;
+  max-width: 700px; /* More balanced width */
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
 }
 
 .image-container {
@@ -32,15 +38,16 @@
 
 .founder-image {
   width: 100%;
-  max-width: 320px;  /* Slightly larger */
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  max-width: 350px; /* Slightly larger */
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .founder-image:hover {
-  transform: scale(1.05);  /* Subtle zoom on hover */
+  transform: scale(1.07); /* More noticeable zoom effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
 .description-container {
@@ -52,36 +59,38 @@
   font-style: italic;
   color: #555;
   margin-bottom: 15px;
-  font-size: 1.2rem; /* Slightly bigger */
+  font-size: 1.1rem; /* Slightly bigger */
 }
 
 .founder-name {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   margin-bottom: 8px;
   color: #222;
 }
 
 .founder-title {
-  font-size: 1rem;
-  color: #777;
+  font-size: 1.1rem;
+  color: #555;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
-.founder-bio {
-  font-size: 1.1rem;
+.founder-bio, .founder-education {
+  font-size: 0.9rem;
   color: #444;
   line-height: 1.7;
+  margin-bottom: 15px;
 }
 
 /* Mission & Vision Section */
 .mission-vision-content {
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
 }
 
 .section-title {
-  font-size: 2.5rem;  /* Slightly larger */
+  font-size: 2.5rem; /* Slightly larger */
   margin-bottom: 30px;
   color: #222;
   font-weight: bold;
@@ -102,30 +111,30 @@
 .stats {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 30px; /* More spacing */
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .stat-item {
   text-align: center;
   padding: 20px;
   border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-  width: 180px;
+  border-radius: 15px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+  width: 190px;
   min-height: 120px;
   background-color: white;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .stat-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
 
 .stat-value {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #007BFF;
 }
@@ -133,6 +142,7 @@
 .stat-label {
   font-size: 1rem;
   color: #666;
+  font-weight: 500;
 }
 
 /* Responsive Design */
@@ -145,6 +155,7 @@
   .founder-section {
       flex-direction: column;
       text-align: center;
+      max-width: 80%;
   }
 
   .description-container {
@@ -153,16 +164,20 @@
 }
 
 @media (max-width: 768px) {
-  /* Ensure 2-column Grid for Stats */
   .stats {
       display: grid;
       grid-template-columns: repeat(2, 1fr); /* 2 columns */
-      gap: 20px;
+      gap: 25px;
       justify-items: center;
   }
 
   .stat-item {
-      width: 150px; /* Adjusted width */
+      width: 160px; /* Adjusted width */
+  }
+
+  .founder-section {
+      max-width: 90%;
+      gap: 20px;
   }
 }
 
@@ -172,9 +187,13 @@
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 20px;
     justify-items: center;
-}
+  }
 
   .stat-item {
-      width: 180px; /* Full width */
+      width: 170px; /* Adjusted width */
+  }
+
+  .founder-section {
+      padding: 20px;
   }
 }
