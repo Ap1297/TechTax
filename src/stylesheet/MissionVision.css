@@ -1,0 +1,180 @@
+/* CSS for Mission & Vision Section */
+.mission-vision-section {
+  font-family: "Arial", sans-serif;
+  padding: 50px 20px;  /* Increased padding for better spacing */
+  color: #333;
+  line-height: 1.8;  /* Improved line height for readability */
+  background-color: #f9fafb;
+}
+
+/* Founder Section */
+.founders-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;  /* More space between founders */
+}
+
+.founder-section {
+  display: flex;
+  gap: 30px;  /* Increased spacing */
+  margin-bottom: 50px;
+  align-items: center;
+  flex: 1;
+  max-width: 600px;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.founder-image {
+  width: 100%;
+  max-width: 320px;  /* Slightly larger */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.founder-image:hover {
+  transform: scale(1.05);  /* Subtle zoom on hover */
+}
+
+.description-container {
+  flex: 2;
+  text-align: left;
+}
+
+.quote {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 1.2rem; /* Slightly bigger */
+}
+
+.founder-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.founder-title {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.founder-bio {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Mission & Vision Section */
+.mission-vision-content {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 2.5rem;  /* Slightly larger */
+  margin-bottom: 30px;
+  color: #222;
+  font-weight: bold;
+}
+
+.mission,
+.vision {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  width: 180px;
+  min-height: 120px;
+  background-color: white;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.stat-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .founders-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .founder-section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .description-container {
+      text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ensure 2-column Grid for Stats */
+  .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 20px;
+      justify-items: center;
+  }
+
+  .stat-item {
+      width: 150px; /* Adjusted width */
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    justify-items: center;
+}
+
+  .stat-item {
+      width: 180px; /* Full width */
+  }
+}

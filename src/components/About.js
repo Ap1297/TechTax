@@ -6,6 +6,7 @@ import accountServiceImg from "../assets/accountService.jpg";
 import itServiceImg from "../assets/AboutUsService.jpg";
 import contactUs from '../assets/contactUs.jpg';
 import Swal from "sweetalert2";
+import MissionVision from "./MissionVision";
 
 const About = () => {
   const [formData, setFormData] = useState({
@@ -148,6 +149,7 @@ const About = () => {
         </div>
       </section>
     <Slider/>
+    <MissionVision/>
       {/* Contact Form */}
       <div className="contact-form">
         <div className="form-image">

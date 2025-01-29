@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../stylesheet/Slider.css"; // Ensure the CSS file path is correct
 import financialImage from "../assets/businessAdvisory.jpg";
+import itService from "../assets/slider 1.jpg";
 import advisory from "../assets/businessSetup.jpg";
 
 const Slider = () => {
@@ -12,16 +13,12 @@ const Slider = () => {
       image: financialImage,
     },
     {
-      title: "Taxation & VAT",
-      image: advisory,
+      title: "Software Services",
+      image: itService,
     },
     {
       title: "Business Consulting",
-      image: financialImage, // Add more slides if needed
-    },
-    {
-      title: "Auditing Services",
-      image: advisory,
+      image: advisory, // Add more slides if needed
     },
   ];
 
