@@ -3,6 +3,7 @@ import '../stylesheet/Contact.css';
 import contactUs from '../assets/contactUs.jpg';
 import Swal from "sweetalert2";
 import FooterSection from "./Footer";
+import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -147,15 +148,19 @@ function Contact() {
       </div>
       <div className="contact-details">
         <div className="office-info">
-          <h3>Dubai Office</h3>
-          <p>Office No. M-45 Aswar Building Business Bay, PO Box: 91929, Dubai</p>
-          <p><strong>Office:</strong> (04) 3364658</p>
+          <h3>
+            <FaMapMarkerAlt className="icon" /> Dubai Office
+          </h3>
+          <p>Silicon Oasis, Silicon Heights 2, Dubai</p>
+          <p><strong>Office:</strong> (05) 07294904</p>
         </div>
         <div className="office-info">
-          <h3>India Office</h3>
-          <p>RK Supreme Office No. 1305, Opp. Twin Star Towers, Near Nana Mova Circle, 150 Ft. Ring Road, Rajkot, Gujarat, India.</p>
-          <p><strong>Phone:</strong> +971 50 119 8465</p>
-          <p><strong>For Inquiry:</strong> info@dkk.ae</p>
+          <h3>
+            <FaMapMarkerAlt className="icon" /> India Office
+          </h3>
+          <p>Silicon Oasis, Silicon Heights 2</p>
+          <p><strong><FaPhone className="icon" /> Phone:</strong> +971 507294904</p>
+          <p><strong><FaEnvelope className="icon" /> For Inquiry:</strong> info@techtax.ae</p>
         </div>
       </div>
     <div><FooterSection/></div>
