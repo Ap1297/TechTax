@@ -38,9 +38,9 @@ const Navbar = () => {
         <nav className={`navbar-links ${menuOpen ? "active" : ""}`}>
           <Link to="/" onClick={closeMenu}>HOME</Link>
           <Link to="/about" onClick={closeMenu}>ABOUT US</Link>
-          <Link to="/services" onClick={closeMenu}>SERVICES</Link>
+          {/* <Link to="/services" onClick={closeMenu}>SERVICES</Link> */}
           <Link to="/contact" onClick={closeMenu}>CONTACT US</Link>
-          <Link to="/blogs" onClick={closeMenu}>BLOGS</Link>
+          {/* <Link to="/blogs" onClick={closeMenu}>BLOGS</Link> */}
         </nav>
 
         <div className="navbar-actions">
