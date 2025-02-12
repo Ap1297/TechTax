@@ -18,7 +18,7 @@ const MissionVision = () => {
               "At TechTax, we don't just manage numbers; we create value. Our goal is to empower businesses with the tools and insights they need to thrive in an ever-evolving market."
             </blockquote>
             <h3 className="founder-name">Ankit Panchal</h3>
-            <p className="founder-title">Founder & CTO, TechTax Accounting & Advisory</p>
+            <p className="founder-title">Founder & CTO, TechTax Accounting & IT Services</p>
             <p className="founder-bio">
               Mr. Ankit Panchal is the visionary Founder and Managing Director of 
               TechTax Accounting & Advisory, established in 2025. With over six 
@@ -47,7 +47,7 @@ const MissionVision = () => {
             "Innovation and integrity are the cornerstones of TechTax. Our commitment is to deliver excellence in financial and technological solutions."
             </blockquote>
             <h3 className="founder-name">Darshan Mansuriya</h3>
-            <p className="founder-title">Founder & Managing Director, TechTax Accounting & Advisory</p>
+            <p className="founder-title">Founder & Managing Director, TechTax Accounting & IT Services</p>
             <p className="founder-bio">
             Darshan Mansuriya is the Co-Founder of TechTax Accounting & Advisory. With extensive expertise in finance and business strategy, he has played a crucial role in shaping the company’s direction. 
               He has over 6+ years of experience in financial management, business consulting, and digital transformation, helping clients navigate complex financial landscapes with ease.
